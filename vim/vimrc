@@ -1,0 +1,5 @@
+" 设置显示文件行数
+set number
+
+" 使用我们settings/*下的配置文件
+source ~/.vim/settings/plugins.vim
