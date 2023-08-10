@@ -11,3 +11,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'dense-analysis/ale'
 
 call plug#end()
+
+" settings of ale
+let g:ale_completion_enabled = 1
+let g:ale_fixers = {
+\   'go': ['gofmt', 'goimports', 'golines', 'gopls'],
+\}
+let g:ale_fix_on_save = 1

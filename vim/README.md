@@ -15,6 +15,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 - `vim/vimrc` root vim config file
 - `vim/settings/plugins.vim` vim plugins config file
+- `vim/settings/configs.vim` vim general config file
 
 ### Root
 
@@ -27,3 +28,4 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 1. [fzf.vim](https://github.com/junegunn/fzf.vim) 用来模糊搜索
 2. [vim-fugitive](https://github.com/tpope/vim-fugitive) git插件
 3. [ALE](https://github.com/dense-analysis/ale) LSP插件
+    - 配置了Golang的linters: `gofmt`, `goimports`, `golines`, `gopls`

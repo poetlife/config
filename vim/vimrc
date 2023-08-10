@@ -3,3 +3,4 @@ set number
 
 " 使用我们settings/*下的配置文件
 source ~/.vim/settings/plugins.vim
+source ~/.vim/settings/configs.vim
