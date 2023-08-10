@@ -26,3 +26,4 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 1. [fzf.vim](https://github.com/junegunn/fzf.vim) 用来模糊搜索
 2. [vim-fugitive](https://github.com/tpope/vim-fugitive) git插件
+3. [ALE](https://github.com/dense-analysis/ale) LSP插件

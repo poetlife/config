@@ -7,4 +7,7 @@ Plug 'junegunn/fzf.vim'
 " Git plugins
 Plug 'tpope/vim-fugitive'
 
+" Lint LSP
+Plug 'dense-analysis/ale'
+
 call plug#end()
