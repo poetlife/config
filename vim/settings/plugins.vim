@@ -21,10 +21,16 @@ endif
 
 call plug#end()
 
+" ========================
 " settings of ale
+" ========================
 let g:ale_completion_enabled = 1
+let g:ale_linters = {
+\   'python': ['flake8', "pylsp"], 
+\}
 let g:ale_fixers = {
 \   'go': ['gofmt', 'goimports', 'golines', 'gopls'],
+\   'python': ['autoflake', 'isort'],
 \}
 let g:ale_fix_on_save = 1
 
