@@ -33,7 +33,40 @@ pip3 install --user pynvim
 1. [fzf.vim](https://github.com/junegunn/fzf.vim) 用来模糊搜索
 2. [vim-fugitive](https://github.com/tpope/vim-fugitive) git插件
 3. [ALE](https://github.com/dense-analysis/ale) LSP插件
-    - 配置了Golang的linters: `gofmt`, `goimports`, `golines`, `gopls`
-
 4. [deoplete.vim](https://github.com/Shougo/deoplete.nvim/) 提供了自动补全，需要Python3的支持
     - 配置了补全唯一来源: `ALE`
+
+#### ALE
+
+该插件配置了不同的linters和fixers，因此，配置的不同的内容可能需要安装，安装脚本如下：
+
+##### Go
+
+- **linters**:
+- **fixers**:  `gofmt`, `goimports`, `golines`, `gopls`
+
+
+```bash
+# goimports 自动更新Go的import
+go install golang.org/x/tools/cmd/goimports@latest
+# golines 可以将长行自动转换为短行
+go install github.com/segmentio/golines@latest
+# gopls Go official LSP
+go install golang.org/x/tools/gopls@latest
+```
+##### Python
+
+- **linters**: `flake8`, `pylsp`
+- **fixers**: `autoflake`, `isort`
+
+
+```bash
+# flake8
+pip install flake8
+# autoflake 修复flake提示的问题
+pip install --upgrade autoflake
+# isort 优化导入
+pip install isort
+# pylsp LSP
+pip install pylsp
+```
