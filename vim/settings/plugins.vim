@@ -22,6 +22,9 @@ endif
 " 状态栏
 Plug 'vim-airline/vim-airline'
 
+" 大纲
+Plug 'preservim/tagbar'
+
 call plug#end()
 
 " ========================
