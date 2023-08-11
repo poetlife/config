@@ -19,14 +19,19 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
+" 状态栏
+Plug 'vim-airline/vim-airline'
+
 call plug#end()
 
 " ========================
 " settings of ale
 " ========================
 let g:ale_completion_enabled = 1
+let g:ale_c_cc_executable = 'gcc'
 let g:ale_linters = {
-\   'python': ['flake8', "pylsp"], 
+\   'python': ['flake8', "pylsp"],
+\   'c': ['cc'],
 \}
 let g:ale_fixers = {
 \   'go': ['gofmt', 'goimports', 'golines', 'gopls'],
