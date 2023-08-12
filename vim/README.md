@@ -37,6 +37,8 @@ pip3 install --user pynvim
     - 配置了补全唯一来源: `ALE`
 5. [vim-airline](https://github.com/vim-airline/vim-airline) 状态栏
 6. [Tagbar](https://github.com/preservim/tagbar) 大纲栏
+7. [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) 自动生成标签
+8. [edge](https://github.com/sainnhe/edge/tree/master) 主题
 
 #### ALE
 
