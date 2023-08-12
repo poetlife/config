@@ -39,6 +39,7 @@ pip3 install --user pynvim
 6. [Tagbar](https://github.com/preservim/tagbar) 大纲栏
 7. [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) 自动生成标签
 8. [edge](https://github.com/sainnhe/edge/tree/master) 主题
+9. [NERDTree](https://github.com/preservim/nerdtree) 文件浏览器
 
 #### ALE
 

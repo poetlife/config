@@ -19,6 +19,9 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
+" File System Browser
+Plug 'preservim/nerdtree'
+
 " 状态栏
 Plug 'vim-airline/vim-airline'
 
