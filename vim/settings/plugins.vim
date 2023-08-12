@@ -66,3 +66,4 @@ let g:edge_style = 'aura'
 let g:edge_dim_foreground=1
 let g:edge_better_performance = 1
 colorscheme edge
+let g:airline_theme = 'edge' " setting airline theme
