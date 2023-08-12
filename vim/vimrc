@@ -1,6 +1,9 @@
 " 设置显示文件行数
 set number
 
+" 设置主题默认的风格为Dark
+set background=dark
+
 " 使用我们settings/*下的配置文件
 source ~/.vim/settings/plugins.vim
 source ~/.vim/settings/configs.vim

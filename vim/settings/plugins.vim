@@ -25,6 +25,12 @@ Plug 'vim-airline/vim-airline'
 " 大纲
 Plug 'preservim/tagbar'
 
+" guentctags 自动生成标签
+Plug 'ludovicchabant/vim-gutentags'
+
+" themes 主题
+Plug 'sainnhe/edge'
+
 call plug#end()
 
 " ========================
@@ -49,3 +55,14 @@ let g:deoplete#enable_at_startup = 1
 call deoplete#custom#option('sources', {
 \ '_': ['ale'],
 \})
+
+" ========================
+" settings of themes of edge
+" ========================
+if has('termguicolors')
+    set termguicolors
+endif
+let g:edge_style = 'aura'
+let g:edge_dim_foreground=1
+let g:edge_better_performance = 1
+colorscheme edge
