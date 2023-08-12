@@ -35,6 +35,8 @@ pip3 install --user pynvim
 3. [ALE](https://github.com/dense-analysis/ale) LSP插件
 4. [deoplete.vim](https://github.com/Shougo/deoplete.nvim/) 提供了自动补全，需要Python3的支持
     - 配置了补全唯一来源: `ALE`
+5. [vim-airline](https://github.com/vim-airline/vim-airline) 状态栏
+6. [Tagbar](https://github.com/preservim/tagbar) 大纲栏
 
 #### ALE
 
@@ -70,3 +72,12 @@ pip install isort
 # pylsp LSP
 pip install pylsp
 ```
+
+##### C
+
+> [Official Doc](https://github.com/dense-analysis/ale/blob/master/doc/ale-c.txt)
+
+- **linters**: `cc`
+- **fixers**: 
+
+其中`cc`是可以通过`g:ale_c_cc_executable`配置执行路径等，我们这里使用`gcc`。
