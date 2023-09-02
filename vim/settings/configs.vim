@@ -4,3 +4,6 @@
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" 设置搜索高亮 * 可以让所有都高亮
+set hlsearch

@@ -27,6 +27,7 @@ pip3 install --user pynvim
 
 - 行号显示
 - Tab转换为4个空格
+- 搜索的时候高亮显示所有项
 
 ### Plugins
 
