@@ -24,3 +24,29 @@ make vim-config
 ```bash
 make tmux-config
 ```
+
+# zsh
+
+> 使用了zsh和oh-my-zsh，具体可以看[文档](https://blog.thepykt.xyz/posts/linux/tools/tmux/#zsh)。
+
+我们先安装oh-my-zsh
+```bash
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+安装语法高亮的插件
+```bash
+cd ~/.oh-my-zsh/custom/plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+```
+
+安装自动补全插件
+```bash
+cd ~/.oh-my-zsh/custom/plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+```
+
+编辑`~/.zshrc`，添加plugin
+```bash
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+```
