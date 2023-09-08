@@ -54,10 +54,24 @@ let g:ale_fix_on_save = 1
 " ========================
 " settings of deopete
 " ========================
-let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 1 " 设置开始的时候就启动
 call deoplete#custom#option('sources', {
 \ '_': ['ale'],
 \})
+set completeopt+=noselect
+call deoplete#custom#option('omni_patterns', {
+\ 'c': ['[^. *\t]\%(\.\|->\)\w*'],
+\ 'cpp': ['[^. *\t]\%(\.\|->\)\w*', '[a-zA-Z_]\w*::'],
+\})
+
+
+" ========================
+" settings of gutentags
+" ========================
+" gutentags搜索工程目录的标志，碰到这些文件/目录名就停止向上一级目录递归
+let g:gutentags_project_root = ['.root', '.svn', '.git', '.project', 'makefile']
+" 所生成的数据文件的名称
+let g:gutentags_ctags_tagfile = '.tags'
 
 " ========================
 " settings of themes of edge

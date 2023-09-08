@@ -85,3 +85,15 @@ pip install pylsp
 - **fixers**: 
 
 其中`cc`是可以通过`g:ale_c_cc_executable`配置执行路径等，我们这里使用`gcc`。
+
+#### deoplete
+
+它是一个自动补全的插件，可以提供强大的代码自动补全功能。我们在这里针对C/C++配置了omnifunc的补全：
+
+```bash
+set completeopt+=noselect
+call deoplete#custom#option('omni_patterns', {
+\ 'c': ['[^. *\t]\%(\.\|->\)\w*'],
+\ 'cpp': ['[^. *\t]\%(\.\|->\)\w*', '[a-zA-Z_]\w*::'],
+\})
+```
