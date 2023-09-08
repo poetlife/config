@@ -97,3 +97,28 @@ call deoplete#custom#option('omni_patterns', {
 \ 'cpp': ['[^. *\t]\%(\.\|->\)\w*', '[a-zA-Z_]\w*::'],
 \})
 ```
+
+#### vim-gutentags
+
+> 使用之前，需要安装好对应的ctags。
+
+该插件可以管理`tags`文件，以及自动生成对应的tags文件。
+
+
+## 开发相关
+
+### C/C++
+
+由于C/C++开发大部分的时候需要获取系统头相关的信息，因此我们约定将生成的系统头文件放置在`~/.cache/tags/sys-tags`中，可以执行如下命令生成：
+
+```bash
+mkdir -p ~/.cache/tags
+ctags -R -f ~/.cache/tags/sys-tags --sort=yes /usr/include
+```
+
+再通过vim中使用如下命令导入：
+```bash
+set tags+=~/.cache/tags/sys-tags
+```
+
+而后就可以正常的使用了。
