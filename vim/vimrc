@@ -7,3 +7,9 @@ set background=dark
 " 使用我们settings/*下的配置文件
 source ~/.vim/settings/plugins.vim
 source ~/.vim/settings/configs.vim
+
+" 默认会使用当前目录下的配置
+if filereadable(".vimrc")
+  source .vimrc
+  " echom "Loaded custom .vimrc within " . getcwd()
+endif
