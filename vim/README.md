@@ -13,6 +13,17 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 pip3 install --user pynvim
 ```
 
+> ⚠️ 如果你使用了anaconda管理你的python版本，那么需要确定当前vim使用的python版本，然后指定版本安装对应依赖的三方包。
+> 
+> ```bash
+> # 在vim中执行如下命令查看路径
+> :pythonx import sys; print(sys.path)
+> ```
+> 之后再使用对应路径的pip进行安装
+> ```bash
+> /usr/local/bin/pip3.8 install --user pynvim
+> ```
+
 ## 配置详情
 
 ### layout
