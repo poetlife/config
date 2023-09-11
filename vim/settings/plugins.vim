@@ -31,6 +31,12 @@ Plug 'preservim/tagbar'
 " guentctags 自动生成标签
 Plug 'ludovicchabant/vim-gutentags'
 
+" cscope
+Plug 'dr-kino/cscope-maps'
+
+" 自动补全括号
+Plug 'jiangmiao/auto-pairs'
+
 " themes 主题
 Plug 'sainnhe/edge'
 
